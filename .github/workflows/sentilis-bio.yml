@@ -1,0 +1,26 @@
+name: Publish bio to Sentilis
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - README.md
+      - .github/workflows/sentilis-bio.yml
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Authenticate with Sentilis
+        run: npx sentilis auth login ${{ secrets.SENTILIS_TOKEN }}
+
+      - name: Push bio
+        run: npx sentilis bio push README.md
