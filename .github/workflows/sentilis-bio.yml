@@ -19,8 +19,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install Sentilis CLI
+        run: npm i -g @sentilis/cli
+
       - name: Authenticate with Sentilis
-        run: npx sentilis auth login ${{ secrets.SENTILIS_TOKEN }}
+        run: sentilis auth login ${{ secrets.SENTILIS_TOKEN }}
 
       - name: Push bio
-        run: npx sentilis bio push README.md
+        run: sentilis bio push README.md
