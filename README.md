@@ -1,22 +1,14 @@
-<p align="center">  
-  <a href="https://github.com/sentilis/awesome-odoo">
-    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sentilis/awesome-odoo?style=social"/>
-  </a>
-  <a>
-   <img alt="GitHub" src="https://img.shields.io/github/license/sentilis/awesome-odoo"/>
-   </a>
-   <a>
-     <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/sentilis/awesome-odoo/master"/>
-  </a>
-</p>
+---
+name: Awesome Odoo
+---
+[![GitHub Repo stars](https://img.shields.io/github/stars/sentilis/awesome-odoo?style=social)](https://github.com/sentilis/awesome-odoo)
+![GitHub](https://img.shields.io/github/license/sentilis/awesome-odoo)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/sentilis/awesome-odoo/master)
 
-# Awesome Odoo
 
 A curated list of awesome Odoo frameworks, libraries and software. Inspired by [awesome-go](https://github.com/avelino/awesome-go)
 
-## Contributing
 
-Please take a quick gander at the [contribution guidelines](CONTRIBUTING.md) first. Thanks to all contributors; you rock!
 
 **If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you!**
 
